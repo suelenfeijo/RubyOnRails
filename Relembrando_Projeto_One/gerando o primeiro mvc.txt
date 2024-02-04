@@ -21,3 +21,6 @@ ele usa o webpack para compilação
 url para visualizar todas as rotas.
 http://localhost:3000/rails/info/routes
 
+não colocando os tipos é reconhecido por padrão como String
+gerando um modelo
+rails g model user first_name last_name

@@ -1,8 +1,13 @@
 class PostsController < ApplicationController
+  # before_action -> antes de qualquer ação
+  #  :set_post, only: -> set o post somente
+  # nas ações efetuadas por ->  show edit update destroy
+  # isso é uma call back
   before_action :set_post, only: %i[ show edit update destroy ]
 
   # GET /posts or /posts.json
   def index
+    #posts recebe todos os posts
     @posts = Post.all
   end
 
@@ -60,6 +65,7 @@ class PostsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_post
+      #aqui é pego o id do post e passado como parametro na url
       @post = Post.find(params[:id])
     end
 
