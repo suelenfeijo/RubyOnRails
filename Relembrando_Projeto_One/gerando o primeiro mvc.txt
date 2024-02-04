@@ -1,0 +1,23 @@
+
+gera o componente model
+rails g model
+
+gera o componente controller
+rails g controller
+
+gera a estrutura MVC completa 
+rails g scaffold Post titulo:string descricao:text
+
+
+sempre que criar um novo modelo, precisa rodar isso pra atualizar o schema no banco.
+No diretório -> db , cria -> schema.rb
+rails db:migrate
+
+
+
+ele usa o webpack para compilação
+
+
+url para visualizar todas as rotas.
+http://localhost:3000/rails/info/routes
+

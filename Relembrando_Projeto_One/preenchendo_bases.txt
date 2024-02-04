@@ -1,0 +1,4 @@
+As Gems
+
+As gems do ruby on rails são as bibliotecas, dependências que podem ser adicionadas no app.
+
