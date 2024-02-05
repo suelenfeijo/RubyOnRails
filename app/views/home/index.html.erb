@@ -1,4 +1,9 @@
-<h1>Home#index</h1>
+<h1>Página de Estudos Ruby On Rails</h1>
 <p>Find me in app/views/home/index.html.erb</p>
 
-<%= %>
+<% @posts.each do |post| %>
+    #aqui só deve mostrar titulo que tiverem descrição
+  <% if post.descricao?%>
+    <h1> <%= post.titulo %> </h1>
+  <%end%>
+<% end %>
