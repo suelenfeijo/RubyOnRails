@@ -2,8 +2,9 @@
 <p>Find me in app/views/home/index.html.erb</p>
 
 <% @posts.each do |post| %>
-    #aqui só deve mostrar titulo que tiverem descrição
   <% if post.descricao?%>
     <h1> <%= post.titulo %> </h1>
   <%end%>
 <% end %>
+
+<%= link_to "Posts", posts_path%>
