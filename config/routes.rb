@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'home/index'
+  #anexando a rota padrão do caminho root
   root 'home#index'
   resources :posts
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
