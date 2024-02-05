@@ -5,7 +5,7 @@ rails g model
 gera o componente controller
 rails g controller
 
-gera a estrutura MVC completa 
+gera a estrutura MVC completa (controller , model, view)
 rails g scaffold Post titulo:string descricao:text
 
 
@@ -24,3 +24,8 @@ http://localhost:3000/rails/info/routes
 não colocando os tipos é reconhecido por padrão como String
 gerando um modelo
 rails g model user first_name last_name
+
+
+
+excluindo um model
+rails d model user
