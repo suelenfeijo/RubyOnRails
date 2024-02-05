@@ -29,3 +29,12 @@ rails g model user first_name last_name
 
 excluindo um model
 rails d model user
+
+
+
+excluindo um controller
+rails d controller user
+
+
+//aqui ele vai criar um
+rails g controller home index
