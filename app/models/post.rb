@@ -3,4 +3,8 @@ class Post < ApplicationRecord
     validates :descricao, presence:true
     validates :titulo, presence:true , length: { minimum: 5 }   
     validates :descricao, length: { maximum: 15}
+
+    before_save do
+        self.titulo = self.titulo + "Suelen"
+    end
 end
